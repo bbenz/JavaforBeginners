@@ -5,7 +5,7 @@ import java.util.stream.*;
 import java.util.Arrays;
 import java.util.ArrayList; 
 
-public class example1 {
+public class stringformattingexample1 {
 
 //char to String
 
@@ -30,6 +30,7 @@ public class example1 {
             return chararray;
             
 }
+
 
 public static char[] StringToCharUsinggetChars(String str)  {
         //String str = "onetwothreefourfive";

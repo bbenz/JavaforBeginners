@@ -1,7 +1,9 @@
 public class example1 {
 
-public static void main(String[] args) {
-          
+public static void main(String[] args)
+
+{
+        
                 System.out.println("Ex 1 Instance variables go here, Before the Loop");
                 int x = 1;
 
@@ -11,6 +13,7 @@ public static void main(String[] args) {
                     x = x + 1;
                 }
                 System.out.println("Ex 1 This is where values are returned, if any, after the loop");
+           
             }
         }
 

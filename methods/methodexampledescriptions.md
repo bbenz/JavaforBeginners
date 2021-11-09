@@ -13,7 +13,7 @@
 * One or more methods can be located inside a class
 * Method code is a set of statements, which are instructions on how that method should be performed
 * Methods return one value. That value can be an array to handle multiple return values.  
-* If a method that returns no value must be declared void
+* A method that returns no value must be declared void
 
 ## Example 2 - Calling methods
 
@@ -28,7 +28,7 @@ Method components:
 * The parameter list - comma-delimited, enclosed by parentheses (). No parameters = empty parentheses ().
 * An optional exception list
 * The method body, enclosed between curly braces {}
-* The return type — the data type of the value returned by the method, or void if the method does not return a value.
+* Return values if the method is not void
 
 ### Parameters and variables
 
@@ -46,18 +46,25 @@ Method components:
 
 ## Example 3 - calling methods with arguments and parameters
 
-### passing variables
+### passing and managing variables
 
 * Java is always pass by value
 * Because of this, values cannot be passed directly 
-* Getters and setters (encapsulation): The public and private access modifiers.
-* private public getters and setters are used for access control.
+* Getters and setters (encapsulation) use public and private access modifiers
+* private getters and setters are used for access control.
+* Local variables are created inside methods
+* Instance variables are created in classes but outside of methods.
 
 ### Stacks, heaps, objects and variables: 
 
-* Local variables are created inside methods
-* Instance variables are created in classes but outside of methods.
-* Java has 2 areas of memory that developers need to know: Stacks and Heaps.  
+* Java handles memory in two ways, via the stack and the heap
+* A JVM stack stores local variables and manages invocation and management of methods
+* The stack is never manipulated directly
+* A JVM heap is shared among all applications and threads running on a single JVM
+* All objects, classes, and related instance variables are stored in the heap
+* Java uses space in the heap for stack management, but does not allow direct control over stack allocation
+* Objects in the stack are never explicitly deallocated.
+* Garbage collection is used to deallocate idle objects in the stack 
 * Local variables are created in stacks (and also but rarely referred to as stack variables)
 * Local variables like primitives and object references are created on Stack memory.
 * Objects are created on Heap memory.
@@ -69,22 +76,3 @@ Method components:
 * Any code in any class of an application can access a public static method.
 * Any variable marked as public, static, and final = a globally-available constant.
 
-
-
-
-
-
-Here's a handy reference table for modifiers
-
-|----------------|--------------|----------------|-----------------|-----------------|  
-|Access Modifier | in class     | in package     | outside package | outside package |  
-|                |              |                | by subclass only|                 |  
-|----------------|--------------|----------------|-----------------|-----------------|  
-|Private         | Y            | N              | N               |N                |  
-|----------------|--------------|----------------|-----------------|-----------------|  
-|Public          | Y            | Y              | Y               |Y                |  
-|----------------|--------------|----------------|-----------------|-----------------|  
-|Default         | Y            | Y              | N               |N                |  
-|----------------|--------------|----------------|-----------------|-----------------|  
-|Protected       | Y            | Y              | Y               |N                |  
-|----------------|--------------|----------------|-----------------|-----------------|  

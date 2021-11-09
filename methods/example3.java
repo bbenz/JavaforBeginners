@@ -1,8 +1,5 @@
 class example3 {
  
-    //int a=0;
-    //int b=0;
-
 public static void main(String [] args) {
 //Call the shareLoop constructor to create two new objects
 
@@ -18,7 +15,8 @@ s2.setSharey(2);
 s2.shareLoop(s2.getSharey(), s2.sharez());
 
 
-//If you try to use instance variables - you get an error - Cannot make a static reference to the non-static field
+//If you try to use instance variables - you get an error
+//  "Cannot make a static reference to the non-static field"
 //local variables or fixed values work, but have limited use
 //int a=0;
 //int b=0;

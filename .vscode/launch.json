@@ -6,19 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch StringToArray",
-            "request": "launch",
-            "mainClass": "StringToArray",
-            "projectName": "javaforbeginners_d6da72fc"
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
             "name": "Launch example1",
             "request": "launch",
             "mainClass": "example1",
