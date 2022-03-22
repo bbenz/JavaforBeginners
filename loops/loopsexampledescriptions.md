@@ -118,6 +118,13 @@ for(int number = 0; number < 5; number++) {
 }
 ```
 
+```java
+String[] names = new String[] {"John", "Jane", "Doe"};
+for(int i = 0; i < names.lenght; i++) {
+  System.out.println(names[i]);
+}
+```
+
 ### Nested for loop
 
 * Loop inside another loop
@@ -140,7 +147,7 @@ Example:
 * Test expression never evaluates to `false`
 
 ```java
-for(int i = 1; i < 5; i--) {
+for(int i = 1; i < 5;) {
   System.out.println("This is unending!");
 }
 
