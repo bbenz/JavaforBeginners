@@ -14,6 +14,16 @@ Conditional logic helps to control the flow of a code in Java. It consists of th
 * || OR operator
 * Order of evaluation - Paranthesis, NOT, AND, OR
 
+Examples:
+
+```java
+boolean x = true || false;
+boolean y = false && true;
+
+System.out.println(!x);
+>> true
+```
+
 ### Conditional operators
 
 * \> greater than
